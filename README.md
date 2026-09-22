@@ -21,4 +21,4 @@
 | Número `3.0` en la condición de aprobación | El umbral de aprobación no tiene nombre, obliga a adivinar su significado | Se extrajo a la constante `NOTA_MINIMA_APROBACION` |
 
 ## Sitio publicado
-Pendiente.
+🔗 https://calculadora-promedio.netlify.app
