@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>pagina</title>
-    <link rel="stylesheet" href="Estilos Del Sitio.CSS">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="cont1">
@@ -26,46 +28,47 @@
         <p id="r2"></p>
     </div>
 
-<script>
+    <script>
 
-let data1 = [];
-let TempValue2 = 0;
-let x = 3;
+        let data1 = [];
+        let TempValue2 = 0;
+        let x = 3;
 
-function calc() {
+        function calc() {
 
-    let a = parseFloat(document.getElementById("n1").value);
-    let b = parseFloat(document.getElementById("n2").value);
-    let c = parseFloat(document.getElementById("n3").value);
+            let a = parseFloat(document.getElementById("n1").value);
+            let b = parseFloat(document.getElementById("n2").value);
+            let c = parseFloat(document.getElementById("n3").value);
 
-    console.log("valores capturados:", a, b, c);
+            console.log("valores capturados:", a, b, c);
 
-    if (isNaN(a) || isNaN(b) || isNaN(c)) {
-        document.getElementById("r").innerHTML = "Debe ingresar las tres notas.";
-        return;
-    }
+            if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                document.getElementById("r").innerHTML = "Debe ingresar las tres notas.";
+                return;
+            }
 
-    TempValue2 = (a + b + c) / x;
+            TempValue2 = (a + b + c) / x;
 
-    document.getElementById("r").innerHTML = "Promedio: " + TempValue2.toFixed(2);
+            document.getElementById("r").innerHTML = "Promedio: " + TempValue2.toFixed(2);
 
-    if (TempValue2 >= 3.0) {
-        document.getElementById("r2").innerHTML = "Resultado: aprobado";
-    } else {
-        document.getElementById("r2").innerHTML = "Resultado: reprobado";
-    }
+            if (TempValue2 >= 3.0) {
+                document.getElementById("r2").innerHTML = "Resultado: aprobado";
+            } else {
+                document.getElementById("r2").innerHTML = "Resultado: reprobado";
+            }
 
-    console.log("promedio calculado");
-}
+            console.log("promedio calculado");
+        }
 
-// function calcularAntiguo(nota1, nota2) {
-//     let suma = nota1 + nota2;
-//     return suma / 2;
-// }
+        // function calcularAntiguo(nota1, nota2) {
+        //     let suma = nota1 + nota2;
+        //     return suma / 2;
+        // }
 
-console.log("pagina cargada");
+        console.log("pagina cargada");
 
-</script>
+    </script>
 
 </body>
+
 </html>
